@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>LOGIN_FORM</title>
+</head>
+<body>
+    <table>
+        <form action="https://web-503073.herokuapp.com/lab01/login.php" method="post" target="_blank">
+        <tr>
+            <th>
+                <label class="email" for="">Email</label>
+            </th>
+            <th>
+                <input class="login" type="text" required placeholder="email@domian.com" name="email">
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <label for="">Password</label>
+            </th>
+            <th>
+                <input class="login" type="password" required name="password">
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Remember me
+            </th>
+            <th>
+                <input type="checkbox">
+            </th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>
+                <input type="submit" name="" id="" value="Login">
+            </th>
+        </tr>
+        <tr>
+            <th></th>
+            <th class="registered">
+                <p>
+                    <span>Not resitered? </span><a href="">Create an account</a>
+                </p>
+            </th>
+        </tr>
+        <tr>
+            <th></th>
+            <th class="registered forgot">
+                <p>
+                    <span>For got your password </span><a href="">Click here to reset</a>
+                </p>
+            </th>
+        </tr>
+        </form>
+    </table>
+</body>
+</html>
