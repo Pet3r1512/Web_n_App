@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Emergency Contact Info</title>
+</head>
+<body>
+    <div class="form">
+        <div class="form__header">
+            <h1 class="form__header--title">Emergency Contact Info</h1>
+            <span class="form__header--more">More Actions <ion-icon name="caret-down-outline"></ion-icon></span>
+        </div>
+        <div class="form__hero">
+            <form action="" method="post" class="">
+                <table class="table">
+                    <tr>
+                        <th>
+                            <label for="firstName">First Name</label> 
+                        </th>
+                        <th>
+                            <input type="text" name="firstName">
+                        </th>
+                        <th colspan="2">
+                            <a href="">Emergency Contact Info</a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="lastName">Last Name</label>
+                        </th>
+                        <th>
+                            <input type="text" name="lastName">
+                        </th>
+                        <th>
+                            <label for="name">Name</label>
+                        </th>
+                        <th>
+                            <input type="text" name="name" id="name" style="text-transform: uppercase;">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="gender">Gender</label>
+                        </th>
+                        <th>
+                            <select name="gender" id="">
+                                <option value="Male" selected>Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </th>
+                        <th>
+                            <label for="relationship">Relationship</label>
+                        </th>
+                        <th>
+                            <input type="text" name="relationship">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="birth">Date of Birth</label>
+                        </th>
+                        <th>
+                            <input type="date" style="min-width: 100%;">
+                        </th>
+                        <th>
+                            <label for="address">Address</label>
+                        </th>
+                        <th rowspan="2">
+                            <textarea type="text" name="address"></textarea>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a href="">Medical Information</a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="hospital">Hospital Preference</label>
+                        </th>
+                        <th>
+                            <input type="text" name="hospital">
+                        </th>
+                        <th>
+                            <label for="city">City</label>
+                        </th>
+                        <th>
+                            <input type="text" name="city">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="insurance">Insurance Company</label>
+                        </th>
+                        <th>
+                            <input type="text" name="insurance">
+                        </th>
+                        <th>
+                            <label for="state">State</label>
+                        </th>
+                        <th>
+                            <select name="state" id="">
+                                <option value="default" selected disabled hidden>--SELECT--</option>
+                                <option value="California">California</option>
+                                <option value="Washington">Washington</option>
+                                <option value="Florida">Florida</option>
+                                <option value="Texas">Texas</option>
+                                <option value="Kansas">Kansas</option>
+                                <option value="Ohio">Ohio</option>
+                                <option value="Utah">Utah</option>
+                            </select>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="policyNumber">Policy Number</label>
+                        </th>
+                        <th>
+                            <input type="text" name="policyNumber">
+                        </th>
+                        <th>
+                            <label for="country">Country</label>
+                        </th>
+                        <th>
+                            <select name="country" id="">
+                                <option value="default" disabled selected hidden>--SELECT--</option>
+                                <option value="usa">The United State</option>
+                            </select>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="physician">Physician's Name</label>
+                        </th>
+                        <th>
+                            <input type="text" name="physician">
+                        </th>
+                        <th>
+                            <label for="homePhone">Home phone</label>
+                        </th>
+                        <th>
+                            <input type="text" name="homePhone">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="phoneNumber">Phone Number</label>
+                        </th>
+                        <th>
+                            <input type="text" name="phoneNumber">
+                        </th>
+                        <th>
+                            <label for="workPhone">Work phone</label>
+                        </th>
+                        <th>
+                            <input type="text" input="text" name="workPhone">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="allergies">Allergies (If any)</label>
+                        </th>
+                        <th rowspan="2">
+                            <textarea type="text" name="allergies"></textarea>
+                        </th>
+                    </tr>
+                </table>
+                <div class="form__footer">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
