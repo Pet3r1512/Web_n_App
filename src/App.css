@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.search_bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 250px;
+}
+
+.result {
+  display: grid;
+  grid-template-columns: 2;
+  gap: 6rem;
+}
